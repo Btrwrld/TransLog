@@ -2,7 +2,7 @@
 % Verbos 
 
 %Verbo aceptar
-infinitivo("aceptar","accept").
+infinitivo("aceptar","to accept").
 verbo(["acepté"],["accepted"],p,s,pa).
 verbo(["aceptó"],["accepted"],s,s,pa).
 verbo(["aceptó"],["accepted"],t,s,pa).
@@ -26,7 +26,7 @@ verbo(["aceptarán"],["will","accept"],t,p,f).
 
 
 %Verbo preguntar
-infinitivo("preguntar","ask").
+infinitivo("preguntar","to ask").
 verbo(["pregunté"],["asked"],p,s,pa).
 verbo(["preguntó"],["asked"],s,s,pa).
 verbo(["preguntó"],["asked"],t,s,pa).
@@ -50,7 +50,7 @@ verbo(["preguntarán"],["will","ask"],t,p,f).
 
 
 %Verbo escuchar
-infinitivo("escuchar","listen").
+infinitivo("escuchar","to listen").
 verbo(["escuché"],["listened"],p,s,pa).
 verbo(["escuchó"],["listened"],s,s,pa).
 verbo(["escuchó"],["listened"],t,s,pa).
@@ -98,7 +98,7 @@ verbo(["estarán"],["will","be"],t,p,f).
 
 
 %Verbo vivir
-infinitivo("vivir","live").
+infinitivo("vivir","to live").
 verbo(["viví"],["lived"],p,s,pa).
 verbo(["vivió"],["lived"],s,s,pa).
 verbo(["vivió"],["lived"],t,s,pa).
@@ -122,7 +122,7 @@ verbo(["vivirán"],["will","live"],t,p,f).
 
 
 %Verbo empezar
-infinitivo("empezar","begin").
+infinitivo("empezar","to begin").
 verbo(["empecé"],["began"],p,s,pa).
 verbo(["empezó"],["began"],s,s,pa).
 verbo(["empezó"],["began"],t,s,pa).
@@ -146,7 +146,7 @@ verbo(["empezarán"],["will","begin"],t,p,f).
 
 
 %Verbo mirar
-infinitivo("mirar","look").
+infinitivo("mirar","to look").
 verbo(["miré"],["looked"],p,s,pa).
 verbo(["miró"],["looked"],s,s,pa).
 verbo(["miró"],["looked"],t,s,pa).
@@ -170,7 +170,7 @@ verbo(["mirarán"],["will","look"],t,p,f).
 
 
 %Verbo perder
-infinitivo("perder","loose").
+infinitivo("perder","to loose").
 verbo(["perdí"],["lost"],p,s,pa).
 verbo(["perdió"],["lost"],s,s,pa).
 verbo(["perdió"],["lost"],t,s,pa).
@@ -194,7 +194,7 @@ verbo(["perderán"],["will","loose"],t,p,f).
 
 
 %Verbo creer
-infinitivo("creer","believe").
+infinitivo("creer","to believe").
 verbo(["creí"],["believed"],p,s,pa).
 verbo(["creyó"],["believed"],s,s,pa).
 verbo(["creyó"],["believed"],t,s,pa).
@@ -218,7 +218,7 @@ verbo(["creerán"],["will","believe"],t,p,f).
 
 
 %Verbo hacer
-infinitivo("hacer","make").
+infinitivo("hacer","to make").
 verbo(["hice"],["made"],p,s,pa).
 verbo(["hizo"],["made"],s,s,pa).
 verbo(["hizo"],["made"],t,s,pa).
@@ -242,7 +242,7 @@ verbo(["harán"],["will","make"],t,p,f).
 
 
 %Verbo romper
-infinitivo("romper","break").
+infinitivo("romper","to break").
 verbo(["rompí"],["broke"],p,s,pa).
 verbo(["rompió"],["broke"],s,s,pa).
 verbo(["rompió"],["broke"],t,s,pa).
@@ -265,7 +265,7 @@ verbo(["romperán"],["will","break"],s,p,f).
 verbo(["romperán"],["will","break"],t,p,f).
 
 %Verbo conocer
-infinitivo("conocer","meet").
+infinitivo("conocer","to meet").
 verbo(["conocí"],["met"],p,s,pa).
 verbo(["conoció"],["met"],s,s,pa).
 verbo(["conoció"],["met"],t,s,pa).
@@ -288,7 +288,7 @@ verbo(["conocerán"],["will","meet"],s,p,f).
 verbo(["conocerán"],["will","meet"],t,p,f).
 
 %Verbo traer
-infinitivo("traer","bring").
+infinitivo("traer","to bring").
 verbo(["traje"],["brought"],p,s,pa).
 verbo(["trajo"],["brought"],s,s,pa).
 verbo(["trajo"],["brought"],t,s,pa).
@@ -312,7 +312,7 @@ verbo(["traerán"],["will","bring"],t,p,f).
 
 
 %Verbo mover
-infinitivo("mover","move").
+infinitivo("mover","to move").
 verbo(["moví"],["moved"],p,s,pa).
 verbo(["movió"],["moved"],s,s,pa).
 verbo(["movió"],["moved"],t,s,pa).
@@ -336,7 +336,7 @@ verbo(["moverán"],["will","move"],t,p,f).
 
 
 %Verbo construir
-infinitivo("construir","build").
+infinitivo("construir","to build").
 verbo(["construí"],["built"],p,s,pa).
 verbo(["construyó"],["built"],s,s,pa).
 verbo(["construyó"],["built"],t,s,pa).
@@ -360,7 +360,7 @@ verbo(["construirán"],["will","build"],t,p,f).
 
 
 %Verbo necesitar
-infinitivo("necesitar","need").
+infinitivo("necesitar","to need").
 verbo(["necesité"],["needed"],p,s,pa).
 verbo(["necesitó"],["needed"],s,s,pa).
 verbo(["necesitó"],["needed"],t,s,pa).
@@ -384,7 +384,7 @@ verbo(["necesitarán"],["will","need"],t,p,f).
 
 
 %Verbo comprar
-infinitivo("comprar","buy").
+infinitivo("comprar","to buy").
 verbo(["compré"],["bought"],p,s,pa).
 verbo(["compró"],["bought"],s,s,pa).
 verbo(["compró"],["bought"],t,s,pa).
@@ -409,7 +409,7 @@ verbo(["comprarán"],["will","buy"],t,p,f).
 
 
 %Verbo abrir
-infinitivo("abrir","open").
+infinitivo("abrir","to open").
 verbo(["abrí"],["opened"],p,s,pa).
 verbo(["abrió"],["opened"],s,s,pa).
 verbo(["abrió"],["opened"],t,s,pa).
@@ -433,7 +433,7 @@ verbo(["abrirán"],["will","open"],t,p,f).
 
 
 %Verbo llamar
-infinitivo("llamar","call").
+infinitivo("llamar","to call").
 verbo(["llamé"],["called"],p,s,pa).
 verbo(["llamó"],["called"],s,s,pa).
 verbo(["llamó"],["called"],t,s,pa).
@@ -457,7 +457,7 @@ verbo(["llamarán"],["will","call"],t,p,f).
 
 
 %Verbo pagar
-infinitivo("pagar","pay").
+infinitivo("pagar","to pay").
 verbo(["pagué"],["paid"],p,s,pa).
 verbo(["pagó"],["paid"],s,s,pa).
 verbo(["pagó"],["paid"],t,s,pa).
@@ -481,7 +481,7 @@ verbo(["pagarán"],["will","pay"],t,p,f).
 
 
 %Verbo jugar
-infinitivo("jugar","play").
+infinitivo("jugar","to play").
 verbo(["jugué"],["played"],p,s,pa).
 verbo(["jugó"],["played"],s,s,pa).
 verbo(["jugó"],["played"],t,s,pa).
@@ -505,7 +505,7 @@ verbo(["jugarán"],["will","play"],t,p,f).
 
 
 %Verbo cancelar
-infinitivo("cancelar","cancel").
+infinitivo("cancelar","to cancel").
 verbo(["cancelé"],["canceled"],p,s,pa).
 verbo(["canceló"],["canceled"],s,s,pa).
 verbo(["canceló"],["canceled"],t,s,pa).
@@ -529,7 +529,7 @@ verbo(["cancelarán"],["will","cancel"],t,p,f).
 
 
 %Verbo poner
-infinitivo("poner","put").
+infinitivo("poner","to put").
 verbo(["puse"],["putted"],p,s,pa).
 verbo(["puso"],["putted"],s,s,pa).
 verbo(["puso"],["putted"],t,s,pa).
@@ -553,7 +553,7 @@ verbo(["pondrán"],["will","put"],t,p,f).
 
 
 %Verbo llevar
-infinitivo("llevar","carry").
+infinitivo("llevar","to carry").
 verbo(["llevé"],["carried"],p,s,pa).
 verbo(["llevó"],["carried"],s,s,pa).
 verbo(["llevó"],["carried"],t,s,pa).
@@ -577,7 +577,7 @@ verbo(["llevarán"],["will","carry"],t,p,f).
 
 
 %Verbo leer
-infinitivo("leer","read").
+infinitivo("leer","to read").
 verbo(["leí"],["read"],p,s,pa).
 verbo(["leyó"],["read"],s,s,pa).
 verbo(["leyó"],["read"],t,s,pa).
@@ -601,7 +601,7 @@ verbo(["leerán"],["will","read"],t,p,f).
 
 
 %Verbo atrapar
-infinitivo("atrapar","catch").
+infinitivo("atrapar","to catch").
 verbo(["atrapé"],["catched"],p,s,pa).
 verbo(["atrapó"],["catched"],s,s,pa).
 verbo(["atrapó"],["catched"],s,s,pa).
@@ -625,7 +625,7 @@ verbo(["atraparán"],["will","catch"],t,p,f).
 
 
 %Verbo responder
-infinitivo("responder","answer").
+infinitivo("responder","to answer").
 verbo(["respondí"],["answered"],p,s,pa).
 verbo(["respondió"],["answered"],s,s,pa).
 verbo(["respondió"],["answered"],t,s,pa).
@@ -649,7 +649,7 @@ verbo(["responderán"],["will","answer"],t,p,f).
 
 
 %Verbo cambiar
-infinitivo("cambiar","change").
+infinitivo("cambiar","to change").
 verbo(["cambié"],["changed"],p,s,pa).
 verbo(["cambió"],["changed"],s,s,pa).
 verbo(["cambió"],["changed"],t,s,pa).
@@ -673,7 +673,7 @@ verbo(["cambiarán"],["will","change"],t,p,f).
 
 
 %Verbo correr
-infinitivo("correr","run").
+infinitivo("correr","to run").
 verbo(["corrí"],["ran"],p,s,pa).
 verbo(["corrió"],["ran"],s,s,pa).
 verbo(["corrió"],["ran"],t,s,pa).
@@ -698,7 +698,7 @@ verbo(["correrán"],["will","run"],t,p,f).
 
 
 %Verbo decir
-infinitivo("decir","say").
+infinitivo("decir","to say").
 verbo(["dije"],["said"],p,s,pa).
 verbo(["dijo"],["said"],s,s,pa).
 verbo(["dijo"],["said"],t,s,pa).
@@ -722,7 +722,7 @@ verbo(["dirán"],["will","say"],t,p,f).
 
 
 %Verbo limpiar
-infinitivo("limpiar","clean").
+infinitivo("limpiar","to clean").
 verbo(["limpié"],["cleaned"],p,s,pa).
 verbo(["limpió"],["cleaned"],s,s,pa).
 verbo(["limpió"],["cleaned"],t,s,pa).
@@ -746,7 +746,7 @@ verbo(["limpian"],["will","clean"],t,p,f).
 
 
 %Verbo ver
-infinitivo("ver","see").
+infinitivo("ver","to see").
 verbo(["ví"],["saw"],p,s,pa).
 verbo(["vió"],["saw"],s,s,pa).
 verbo(["vió"],["saw"],t,s,pa).
@@ -770,7 +770,7 @@ verbo(["verán"],["will","see"],s,p,f).
 
 
 %Verbo cerrar
-infinitivo("cerrar","close").
+infinitivo("cerrar","to close").
 verbo(["cerré"],["closed"],p,s,pa).
 verbo(["cerró"],["closed"],s,s,pa).
 verbo(["cerró"],["closed"],t,s,pa).
@@ -794,7 +794,7 @@ verbo(["cerrarán"],["will","close"],t,p,f).
 
 
 %Verbo venir
-infinitivo("venir","come").
+infinitivo("venir","to come").
 verbo(["vine"],["came"],p,s,pa).
 verbo(["vino"],["came"],s,s,pa).
 verbo(["vino"],["came"],t,s,pa).
@@ -819,7 +819,7 @@ verbo(["vendrán"],["will","come"],t,p,f).
 
 
 %Verbo vender
-infinitivo("vender","sell").
+infinitivo("vender","to sell").
 verbo(["vendí"],["sold"],p,s,pa).
 verbo(["vendió"],["sold"],s,s,pa).
 verbo(["vendió"],["sold"],t,s,pa).
@@ -843,7 +843,7 @@ verbo(["venderán"],["will","sell"],t,p,f).
 
 
 %Verbo cortar
-infinitivo("cortar","cut").
+infinitivo("cortar","to cut").
 verbo(["corté"],["cut"],p,s,pa).
 verbo(["cortó"],["cut"],s,s,pa).
 verbo(["cortó"],["cut"],t,s,pa).
@@ -868,7 +868,7 @@ verbo(["cortarán"],["will","cut"],t,p,f).
 
 
 %Verbo enviar
-infinitivo("enviar","send").
+infinitivo("enviar","to send").
 verbo(["envié"],["sent"],p,s,pa).
 verbo(["envió"],["sent"],s,s,pa).
 verbo(["envió"],["sent"],t,s,pa).
@@ -893,7 +893,7 @@ verbo(["enviarán"],["will","send"],t,p,f).
 
 
 %Verbo bailar
-infinitivo("bailar","dance").
+infinitivo("bailar","to dance").
 verbo(["bailé"],["danced"],p,s,pa).
 verbo(["bailó"],["danced"],s,s,pa).
 verbo(["bailó"],["danced"],t,s,pa).
@@ -917,7 +917,7 @@ verbo(["bailarán"],["will","dance"],t,p,f).
 
 
 %Verbo decidir
-infinitivo("decidir","decide").
+infinitivo("decidir","to decide").
 verbo(["decidí"],["decided"],p,s,pa).
 verbo(["decidió"],["decided"],s,s,pa).
 verbo(["decidió"],["decided"],s,s,pa).
