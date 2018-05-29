@@ -1,4 +1,5 @@
-%Sustantivos
+<<<<<<< HEAD
+%Sustantivos 
 
 sustantivo(["carro"],["car"],m,s);!.
 sustantivo(["perro"],["dog"],m,s);!.
@@ -96,6 +97,9 @@ verbo(["no"],["wonÂ´t"],p,p,f);!.
 verbo(["no"],["wonÂ´t"],s,p,f);!.
 verbo(["no"],["wonÂ´t"],t,p,f);!.
 
+
+=======
+
 sustantivo(["carro"],["car"],m,s).
 sustantivo(["carros"],["cars"],m,p).
 sustantivo(["perro"],["dog"],m,s).
@@ -132,8 +136,8 @@ sustantivo(["huesos"],["bones"],m,p).
 sustantivo(["libro"],["book"],m,s).
 sustantivo(["libros"],["books"],m,p).
 sustantivo(["fondo"],["bottom"],m,s).
-sustantivo(["caja"],["box"],f,s).
-sustantivo(["cajas"],["boxes",f,p).
+sustantivo(["caja"],["box"],,f,s).
+sustantivo(["cajas"],["boxes"],,f,p).
 sustantivo(["niño"],["boy"],m,s).
 sustantivo(["niños"],["boys"],m,p).
 sustantivo(["niña"],["girl"],f,s).
@@ -144,7 +148,7 @@ sustantivo(["negocio"],["business"],m,s).
 sustantivo(["llamada"],["call"],f,s).
 sustantivo(["llamadas"],["calls"],f,p).
 sustantivo(["capital"],["capital"],f,s).
-sustantivo(["centro"],["center"],m,s).
+sustantivo(["centro","center",m,s).
 sustantivo(["siglo"],["century"],m,s).
 sustantivo(["siglos"],["centuries"],m,p).
 sustantivo(["oportunidad"],["chance"],f,s).
@@ -335,3 +339,4 @@ sustantivo(["palabras"],["words"],f,p).
 sustantivo(["mundo"],["world"],m,s).
 sustantivo(["año"],["year"],m,s).
 sustantivo(["años"],["years"],m,p).
+>>>>>>> 8f00d6a772b731e9a6767578535c782a01d89c28
