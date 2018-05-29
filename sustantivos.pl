@@ -1,12 +1,3 @@
-%Sustantivos
-
-sustantivo(["carro"],["car"],m,s):-!.
-sustantivo(["perro"],["dog"],m,s):-!.
-sustantivo(["manzana"],["apple"],f,s):-!.
-sustantivo(["hermano"],["brother"],m,s):-!.
-
-
-
 
 %Pronombres persona cantidad tiempo sexo
 pronombre(["yo"],["i"],p,s,mf):-!.
@@ -82,20 +73,7 @@ aux(["no"],["didnt"],p,p,pa):-!.
 aux(["no"],["didnt"],s,p,pa):-!.
 aux(["no"],["didnt"],t,p,pa):-!.
 
-verbo([""],["will"],p,s,f):-!.
-verbo([""],["will"],s,s,f):-!.
-verbo([""],["will"],t,s,f):-!.
-verbo([""],["will"],p,p,f):-!.
-verbo([""],["will"],s,p,f):-!.
-verbo([""],["will"],t,p,f):-!.
-
-verbo(["no"],["wont"],p,s,f):-!.
-verbo(["no"],["wont"],s,s,f):-!.
-verbo(["no"],["wont"],t,s,f):-!.
-verbo(["no"],["wont"],p,p,f):-!.
-verbo(["no"],["wont"],s,p,f):-!.
-verbo(["no"],["wont"],t,p,f):-!.
-
+%Sustantivos
 sustantivo(["carro"],["car"],m,s).
 sustantivo(["carros"],["cars"],m,p).
 sustantivo(["perro"],["dog"],m,s).
@@ -118,7 +96,7 @@ sustantivo(["bola"],["ball"],f,s).
 sustantivo(["bolas"],["balls"],f,p).
 sustantivo(["banco"],["bank"],m,s).
 sustantivo(["cama"],["bed"],f,s).
-sustantivo(["camas"],["beds"],f).
+sustantivo(["camas"],["beds"],f,p).
 sustantivo(["factura"],["bill"],f,s).
 sustantivo(["facturas"],["bills"],f,p).
 sustantivo(["pájaro"],["bird"],m,s).
@@ -133,7 +111,7 @@ sustantivo(["libro"],["book"],m,s).
 sustantivo(["libros"],["books"],m,p).
 sustantivo(["fondo"],["bottom"],m,s).
 sustantivo(["caja"],["box"],f,s).
-sustantivo(["cajas"],["boxes",f,p).
+sustantivo(["cajas"],["boxes"],f,p).
 sustantivo(["niño"],["boy"],m,s).
 sustantivo(["niños"],["boys"],m,p).
 sustantivo(["niña"],["girl"],f,s).

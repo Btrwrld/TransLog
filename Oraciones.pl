@@ -3,52 +3,41 @@
 :- consult(sustantivos).
 :- consult(articulosYconjunciones).
 
-tradIE([],[]);!.
+
+
 /* Identifica un sujeto y busca el verbo*/
-TradIE(I,E):- subject(I,Irs,Rs,Persona,Cant);tradIE(I,Ve,v,Persona,Cant);conc(Rs,Rv,E);!.
-
+tradIE(I,E):- subject(I,Irs,Se,Persona,Cant,_),
+tradIE(Irs,Irv,Ve,v,Persona,Cant),
+conc(Se,Ve,E0),tradIE(Irv,E1,p),
+conc(E0,E1,E).
+tradIE([],[],_).
+tradIE(I,E,p):- predicate(I,E).
 /*Busca el verbo que se adapta de mejor manera al sujeto*/
-tradIE(I,E,v,Persona,Cant):- verb(Irs,Irf,Rv,Cant);conc(Rs,Rv,E);!.%Oracion sin auxililar
-tradIE(I,E,v,Persona,Cant):- verb(Irs,Irv,Rav,Persona,Cant,Tiempo);conc(Rs,Rav,E);!.%Oracion con auxililar
-
-TraIE(I,E,p):- predicate
+/*tradIE(I,Ir,Rv,v,Persona,Cant):- verb(I,Ir,Rv,Cant),!.%Oracion sin auxililar*/
+tradIE(I,Ir,E,v,Persona,Cant):- verb(I,Ir,E,Persona,Cant),!.%Oracion con auxililar
 
 
 
-/* Articulo + sustantivo*/
-subject(I,Ir,[Ae|Se],t,Cant):- getSpaces(I,2,[A|S]);sustantivo([Se|_],Si,Sexo,Cant);articulo(Ae,[Ai],Sexo,Cant);cutList(I,2,Ir);!.
+/* Articulo + sustantivo  getSpaces(I,2,[Ai|Si]),*/
+subject([Ai|[Si|P]],P,E,t,Cant,Sexo):-sustantivo(Se,[Si],Sexo,Cant),articulo(Ae,[Ai],Sexo,Cant),conc(Ae,Se,E),!.
 /*Pronombre*/
-subject([Si|Ir],Ir,Se,Persona,Cant):- pronombre(Se,[Si],Persona,Cant,Sexo);!.
+subject([Si|Ir],Ir,Se,Persona,Cant,_):- pronombre(Se,[Si],Persona,Cant,_),!.
 /*Pregunta, inicia con auxiliar*/
-subject(I,Ir,Ae,Sexo,Cant,Tiempo):- getSpaces(I,2,Ai);preg(Ae,Ai,Sexo,Cant,Tiempo).
+subject([A1|[A2|Ir]],Ir,Ae,Sexo,Cant,Tiempo):- preg(Ae,[A1,A2],Sexo,Cant,Tiempo),!.
 
 
 
 /*Identifica el verbo auxiliar y lo conjuga con el siguiente*/
-verb([Avi|Pi],Pi,E,Persona,Cant):- aux(Ave,[Avi],Persona,Cant,Tiempo);auxInf(Ve,[Vi]);conc(Ave,Ve,E);!.
-/*Sólo identifica el verbo auxiliar*/
-verb([Avi|Pi],Pi,Ave,Persona,Cant):- aux(Ave,[Avi],Persona,Cant,Tiempo);!.
+verb([Avi|[Vi|Pi]],Pi,E,Persona,Cant):- aux(Ave,[Avi],Persona,Cant,_),auxInf(Ve,[Vi]),conc(Ave,Ve,E),!.
 /*Si cae aqui es un sujeto con articulo es decir tercera persona*/
-verb([Vi|T],T,Res,Cant):-verbo(Ve,[Vi],t,Cant,_);predicate(T,Pe);conc(Ve,Pe,E).
+verb([Vi|T],T,Ve,Persona,Cant):-verbo(Ve,[Vi],Persona,Cant,_).
+/*Sólo identifica el verbo auxiliar*/
+verb([Avi|Pi],Pi,Ave,Persona,Cant):- aux(Ave,[Avi],Persona,Cant,_),!.
 
 
 
-predicate(I,E):- subject(I,Irs,Se,Sexo,Cant);predicate((Ir,Pe,Sexo,Cant)!. 
-predicate(([Pi1|Pi2],E,Sexo,Cant):-alg(Ae,Pi1,Sexo,Cant)
-
-
-
-sintagma_verbal(S0,S):- verbo(S0,S).
-
-sintagma_verbal(S0,S):- verbo(S0,S1),sintagma_nominal(S1,S).
-
-
-
-
-
-
-
-
+predicate(I,Se):- subject(I,_,Se,_,_,_),!.
+predicate([Si|_],Se):- sustantivo(Se,[Si],_,_),!.
 
 
 
@@ -90,11 +79,11 @@ sintagma_verbal(S0,S):- verbo(S0,S1),sintagma_nominal(S1,S).
 
 
 /*Traduce oraciones de español a inglés*/
-
+/*
 tradEI([],[]).
 tradEI([E],[X]):-tradP(E,X).
 tradEI(L,X):-tradFEI(L,Trad,Resto),tradEI(Resto,Y),conc(Trad,Y,X),!.
-tradEI([H|T],X):-tradP(H,R),tradEI(T,Y),conc([R],Y,X).
+tradEI([H|T],X):-tradP(H,R),tradEI(T,Y),conc([R],Y,X).*/
 
 /*Traduce frases de español a inglés
 tradFEI(Entrada,Trad,Resto):-
@@ -106,11 +95,6 @@ cutList(Entrada,Len,Resto).*/
 
 
 
-/*Traduce oraciones de inglés a español*/
-traeIE([],[]).
-tradIE([E],[X]):-tradP(X,E).
-tradIE(L,X):-tradFIE(L,Trad,Resto),tradIE(Resto,Y),conc(Trad,Y,X).
-tradIE([H|T],X):-tradP(R,H),tradIE(T,Y),conc([R],Y,X).
 
 /*Traduce frases de inglés a español*/
 tradFIE(Entrada,Trad,Resto):-
@@ -140,32 +124,6 @@ cutList([_|T],N,LR):-K is N-1, cutList(T,K,LR).
 
 conc([],L,L).
 conc([X|L1],L2,[X|L3]):- conc(L1,L2,L3).
-
-/*Base de datos, se ordena de forma
-elemento(Palabra en español , palabra en inlglés)*/
-
-verbo(come,eats).
-verbo(corre,runs).
-verbo(vive,lives).
-verbo(estudia,studies).
-
-
-articulo(el,the).
-articulo(al,the).
-articulo(lo,the).
-articulo(la,the).
-articulo(los,the).
-articulo(las,the).
-
-sustantivo(carro,car).
-sustantivo(perro,dog).
-sustantivo(manzana,apple).
-sustantivo(hermano,brother).
-
-adjetivo(rojo,red).
-adjetivo(malo,bad).
-adjetivo(alto,tall).
-adjetivo(feliz,happy).
 
 
 /* Las frases son oraciones que traducidas literalmete no tienen sentido. Siguen el orden:

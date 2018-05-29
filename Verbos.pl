@@ -164,6 +164,23 @@ auxInf("trabajar",["work"]):-!.
 auxInf("escribir",["write"]):-!.
 auxInf("conocer",["know"]):-!.
 
+
+
+verbo([""],["will"],p,s,f):-!.
+verbo([""],["will"],s,s,f):-!.
+verbo([""],["will"],t,s,f):-!.
+verbo([""],["will"],p,p,f):-!.
+verbo([""],["will"],s,p,f):-!.
+verbo([""],["will"],t,p,f):-!.
+
+verbo(["no"],["wont"],p,s,f):-!.
+verbo(["no"],["wont"],s,s,f):-!.
+verbo(["no"],["wont"],t,s,f):-!.
+verbo(["no"],["wont"],p,p,f):-!.
+verbo(["no"],["wont"],s,p,f):-!.
+verbo(["no"],["wont"],t,p,f):-!.
+
+
 %Verbo aceptar
 verbo(["acepté"],["accepted"],p,s,pa):-!.
 verbo(["aceptó"],["accepted"],s,s,pa):-!.
