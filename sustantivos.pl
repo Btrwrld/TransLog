@@ -12,7 +12,7 @@ sustantivo(["hermano"],["brother"],m,s):-!.
 pronombre(["yo"],["i"],p,s,mf):-!.
 pronombre(["usted"],["you"],s,s,mf):-!.
 pronombre(["ella"],["she"],t,s,f):-!.
-pronombre(["Ã©l"],["he"],t,s,f):-!.
+pronombre(["él"],["he"],t,s,f):-!.
 pronombre(["eso"],["it"],t,s,mf):-!.
 pronombre(["nosotros"],["we"],p,p,m):-!.
 pronombre(["nosotras"],["we"],p,p,f):-!.
@@ -23,7 +23,7 @@ pronombre(["ellos"],["they"],t,p,m):-!.
 %Verbos pregiliares
 preg(["yo"],["do","i"],i,s,pr):-!.
 preg(["usted"],["do","you"],i,s,pr):-!.
-preg(["Ã©l"],["does","he"],m,s,pr):-!.
+preg(["él"],["does","he"],m,s,pr):-!.
 preg(["ella"],["does","she"],f,s,pr):-!.
 preg(["eso"],["does","it"],i,s,pr):-!.
 preg(["ustedes"],["do","you"],i,p,pr):-!.
@@ -31,7 +31,7 @@ preg(["ellos"],["do","they"],m,p,pr):-!.
 preg(["ellas"],["do","they"],f,p,pr):-!.
 
 preg(["usted"],["did","you"],i,s,pa):-!.
-preg(["Ã©l"],["did","he"],m,s,pa):-!.
+preg(["él"],["did","he"],m,s,pa):-!.
 preg(["ella"],["did","she"],f,s,pa):-!.
 preg(["eso"],["did","it"],i,s,pa):-!.
 preg(["ustedes"],["did","you"],i,p,pa):-!.
@@ -39,7 +39,7 @@ preg(["ellos"],["did","they"],m,p,pa):-!.
 preg(["ellas"],["did","they"],f,p,pa):-!.
 
 preg(["usted"],["were","you"],i,s,pa):-!.
-preg(["Ã©l"],["was","he"],m,s,pa):-!.
+preg(["él"],["was","he"],m,s,pa):-!.
 preg(["ella"],["was","she"],f,s,pa):-!.
 preg(["eso"],["was","it"],i,s,pa):-!.
 preg(["ustedes"],["were","you"],i,p,pa):-!.
@@ -47,7 +47,7 @@ preg(["ellos"],["were","they"],m,p,pa):-!.
 preg(["ellas"],["were","they"],f,p,pa):-!.
 
 preg(["usted"],["will","you"],i,s,f):-!.
-preg(["Ã©l"],["will","he"],m,s,f):-!.
+preg(["él"],["will","he"],m,s,f):-!.
 preg(["ella"],["will","she"],f,s,f):-!.
 preg(["eso"],["will","it"],i,s,f):-!.
 preg(["ustedes"],["will","you"],i,p,f):-!.
