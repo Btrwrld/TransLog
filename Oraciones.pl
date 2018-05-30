@@ -3,6 +3,8 @@
 :- consult(sustantivos).
 :- consult(articulosYconjunciones).
 
+traduccionEI(X,R):-split_string(X," ", "", L),tradEI(L,I),atomic_list_concat(I, ' ', R).
+traduccionIE(X,R):-split_string(X," ", "", L),tradIE(L,I),atomic_list_concat(I, ' ', R).
 
 
 /* Identifica un sujeto y busca el verbo*/
@@ -31,7 +33,7 @@ subject([A1|[A2|Ir]],Ir,Ae,Sexo,Cant,Tiempo):- preg(Ae,[A1,A2],Sexo,Cant,Tiempo)
 verb([Avi|[Vi|Pi]],Pi,E,Persona,Cant):- aux(Ave,[Avi],Persona,Cant,_),auxInf(Ve,[Vi]),conc(Ave,Ve,E),!.
 /*Si cae aqui es un sujeto con articulo es decir tercera persona*/
 verb([Vi|T],T,Ve,Persona,Cant):-verbo(Ve,[Vi],Persona,Cant,_).
-/*Sólo identifica el verbo auxiliar*/
+/*Solo identifica el verbo auxiliar*/
 verb([Avi|Pi],Pi,Ave,Persona,Cant):- aux(Ave,[Avi],Persona,Cant,_),!.
 
 
@@ -60,7 +62,7 @@ sintagma_nominal([Ae|[Se|P]],P,E,t,Cant,Sexo):- sustantivo([Se],Si,Sexo,Cant),ar
 /*Pronombre*/
 sintagma_nominal([Se|Ir],Ir,Si,Persona,Cant,_):- pronombre([Se],Si,Persona,Cant,_),!.
 
-/*En español la conjugación del verbo decide los auxiliares en ingles*/
+/*En español la conjugacion del verbo decide los auxiliares en ingles*/
 sintagma_verbal([Ve|T],T,Vi,Persona,Cant):-verbo([Ve],Vi,Persona,Cant,_).
 
 predicado(E,Se):- sintagma_nominal(E,_,Se,_,_,_),!.
@@ -97,14 +99,14 @@ predicado([Se|_],Si):- sustantivo([Se],Si,_,_),!.
 
 
 
-/*Traduce oraciones de español a inglés*/
+/*Traduce oraciones de español a ingles*/
 /*
 tradEI([],[]).
 tradEI([E],[X]):-tradP(E,X).
 tradEI(L,X):-tradFEI(L,Trad,Resto),tradEI(Resto,Y),conc(Trad,Y,X),!.
 tradEI([H|T],X):-tradP(H,R),tradEI(T,Y),conc([R],Y,X).*/
 
-/*Traduce frases de español a inglés
+/*Traduce frases de español a ingles
 tradFEI(Entrada,Trad,Resto):-
 frase(_,_,Len,_),
 getSpaces(Entrada,Len,Res),
@@ -115,7 +117,7 @@ cutList(Entrada,Len,Resto).*/
 
 
 
-/*Traduce frases de inglés a español*/
+/*Traduce frases de ingles a español*/
 tradFIE(Entrada,Trad,Resto):-
 frase(_,_,_,Len),
 getSpaces(Entrada,Len,Res),
@@ -148,7 +150,7 @@ conc([X|L1],L2,[X|L3]):- conc(L1,L2,L3).
 /* Las frases son oraciones que traducidas literalmete no tienen sentido. Siguen el orden:
 frase(frase en esp, frase en ing, longitud de la frase en esp,longitud de la frase en ing)*/
 frase([cuantos,años,tienes],[how,old,are,you],3,4).
-frase([buenos,días],[good,morning],2,2).
+frase([buenos,dias],[good,morning],2,2).
 
 
 

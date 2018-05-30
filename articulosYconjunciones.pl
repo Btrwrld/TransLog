@@ -47,7 +47,7 @@ alg(["esas"],["those"],f,p).
 
 
 %Preguntas
-preg(["qué"],["what"]).
+preg(["que"],["what"]).
 preg(["cual"],["which"]).
 preg(["como"],["how"]).
 preg(["donde"],["where"]).

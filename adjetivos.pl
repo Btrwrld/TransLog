@@ -3,8 +3,8 @@ adjetivo(["aburrido"],["bored"],m,s):-!.
 adjetivo(["aburridos"],["bored"],m,p):-!.
 adjetivo(["aburrida"],["bored"],f,s):-!.
 adjetivo(["aburridas"],["bored"],f,p):-!.
-adjetivo(["ácido"],["acid"],m,s):-!.
-adjetivo(["ácidos"],["acid"],m,p):-!.
+adjetivo(["acido"],["acid"],m,s):-!.
+adjetivo(["acidos"],["acid"],m,p):-!.
 adjetivo(["alto"],["tall"],m,s):-!.
 adjetivo(["altos"],["tall"],m,s):-!.
 adjetivo(["alta"],["tall"],f,s):-!.
@@ -67,17 +67,17 @@ adjetivo(["caliente"],["hot"],m,s):-!.
 adjetivo(["calientes"],["hot"],m,p):-!.
 adjetivo(["caliente"],["hot"],f,s):-!.
 adjetivo(["calientes"],["hot"],f,p):-!.
-adjetivo(["cálido"],["warm"],m,s):-!.
-adjetivo(["cálidos"],["warm"],m,p):-!.
-adjetivo(["cálida"],["warm"],f,s):-!.
-adjetivo(["cálidas"],["warm"],f,p):-!.
+adjetivo(["calido"],["warm"],m,s):-!.
+adjetivo(["calidos"],["warm"],m,p):-!.
+adjetivo(["calida"],["warm"],f,s):-!.
+adjetivo(["calidas"],["warm"],f,p):-!.
 adjetivo(["capaz"],["capable"],m,s):-!.
 adjetivo(["capaces"],["capable"],m,p):-!.
 adjetivo(["capaz"],["capable"],f,s):-!.
 adjetivo(["capaces"],["capable"],f,p):-!.
-adjetivo(["común"],["common"],m,s):-!.
+adjetivo(["comun"],["common"],m,s):-!.
 adjetivo(["comunes"],["common"],m,p):-!.
-adjetivo(["común"],["common"],f,s):-!.
+adjetivo(["comun"],["common"],f,s):-!.
 adjetivo(["comunes"],["common"],f,p):-!.
 adjetivo(["conocido"],["known"],m,s):-!.
 adjetivo(["conocidos"],["known"],m,p):-!.
@@ -103,16 +103,16 @@ adjetivo(["cansado"],["tired"],m,s):-!.
 adjetivo(["cansados"],["tired"],m,p):-!.
 adjetivo(["cansada"],["tired"],f,s):-!.
 adjetivo(["cansadas"],["tired"],f,p):-!.
-adjetivo(["café"],["brown"],m,s):-!.
-adjetivo(["cafés"],["brown"],m,p):-!.
-adjetivo(["café"],["brown"],f,s):-!.
-adjetivo(["cafés"],["brown"],f,p):-!.
+adjetivo(["cafe"],["brown"],m,s):-!.
+adjetivo(["cafes"],["brown"],m,p):-!.
+adjetivo(["cafe"],["brown"],f,s):-!.
+adjetivo(["cafes"],["brown"],f,p):-!.
 
 %Adjetivos con D
-adjetivo(["débil"],["weak"],m,s):-!.
-adjetivo(["débiles"],["weak"],m,p):-!.
-adjetivo(["débil"],["weak"],f,s):-!.
-adjetivo(["débiles"],["weak"],f,p):-!.
+adjetivo(["debil"],["weak"],m,s):-!.
+adjetivo(["debiles"],["weak"],m,p):-!.
+adjetivo(["debil"],["weak"],f,s):-!.
+adjetivo(["debiles"],["weak"],f,p):-!.
 adjetivo(["delgado"],["thin"],m,s):-!.
 adjetivo(["delgados"],["thin"],m,p):-!.
 adjetivo(["delgada"],["thin"],f,s):-!.
@@ -123,10 +123,10 @@ adjetivo(["diferente"],["different"],m,s):-!.
 adjetivo(["diferentes"],["different"],m,p):-!.
 adjetivo(["diferente"],["different"],f,s):-!.
 adjetivo(["diferentes"],["different"],f,p):-!.
-adjetivo(["difícil"],["difficult"],m,s):-!.
-adjetivo(["difíciles"],["difficult"],m,s):-!.
-adjetivo(["difícil"],["difficult"],f,s):-!.
-adjetivo(["difíciles"],["difficult"],f,s):-!.
+adjetivo(["dificil"],["difficult"],m,s):-!.
+adjetivo(["dificiles"],["difficult"],m,s):-!.
+adjetivo(["dificil"],["difficult"],f,s):-!.
+adjetivo(["dificiles"],["difficult"],f,s):-!.
 adjetivo(["divertido"],["funny"],m,s):-!.
 adjetivo(["divertidos"],["funny"],m,p):-!.
 adjetivo(["divertida"],["funny"],f,s):-!.
@@ -159,10 +159,10 @@ adjetivo(["exterior"],["outside"],f,s):-!.
 adjetivo(["exteriores"],["outside"],f,p):-!.
 
 %Adjetivos con F
-adjetivo(["fácil"],["easy"],m,s):-!.
-adjetivo(["fáciles"],["easy"],m,p):-!.
-adjetivo(["fácil"],["easy"],f,s):-!.
-adjetivo(["fáciles"],["easy"],f,p):-!.
+adjetivo(["facil"],["easy"],m,s):-!.
+adjetivo(["faciles"],["easy"],m,p):-!.
+adjetivo(["facil"],["easy"],f,s):-!.
+adjetivo(["faciles"],["easy"],f,p):-!.
 adjetivo(["falso"],["false"],m,s):-!.
 adjetivo(["falsos"],["false"],m,p):-!.
 adjetivo(["falsa"],["false"],f,s):-!.
@@ -183,10 +183,10 @@ adjetivo(["fresco"],["fresh"],m,s):-!.
 adjetivo(["frescos"],["fresh"],m,p):-!.
 adjetivo(["fresca"],["fresh"],f,s):-!.
 adjetivo(["frescas"],["fresh"],f,p):-!.
-adjetivo(["frío"],["cold"],m,s):-!.
-adjetivo(["fríos"],["cold"],m,p):-!.
-adjetivo(["fría"],["cold"],f,s):-!.
-adjetivo(["frías"],["cold"],f,p):-!.
+adjetivo(["frio"],["cold"],m,s):-!.
+adjetivo(["frios"],["cold"],m,p):-!.
+adjetivo(["fria"],["cold"],f,s):-!.
+adjetivo(["frias"],["cold"],f,p):-!.
 adjetivo(["fuerte"],["strong"],m,s):-!.
 adjetivo(["fuertes"],["strong"],m,p):-!.
 adjetivo(["fuerte"],["strong"],f,s):-!.
@@ -233,10 +233,10 @@ adjetivo(["gigantes"],["giant"],f,p):-!.
 
 
 %Adjetivos con H
-adjetivo(["húmedo"],["damp"],m,s):-!.
-adjetivo(["húmedos"],["damp"],m,p):-!.
-adjetivo(["húmeda"],["damp"],f,s):-!.
-adjetivo(["húmedas"],["damp"],f,p):-!.
+adjetivo(["humedo"],["damp"],m,s):-!.
+adjetivo(["humedos"],["damp"],m,p):-!.
+adjetivo(["humeda"],["damp"],f,s):-!.
+adjetivo(["humedas"],["damp"],f,p):-!.
 adjetivo(["hermoso"],["handsome"],m,s):-!.
 adjetivo(["hermosos"],["handsome"],m,p):-!.
 adjetivo(["hermosa"],["beautiful"],f,s):-!.
@@ -256,10 +256,10 @@ adjetivo(["interesante"],["interesting"],m,s):-!.
 adjetivo(["interesantes"],["interesting"],m,p):-!.
 adjetivo(["interesante"],["interesting"],f,s):-!.
 adjetivo(["interesantes"],["interesting"],f,p):-!.
-adjetivo(["inútil"],["useless"],m,s):-!.
-adjetivo(["inútiles"],["useless"],m,p):-!.
-adjetivo(["inútil"],["useless"],f,s):-!.
-adjetivo(["inútiles"],["useless"],f,p):-!.
+adjetivo(["inutil"],["useless"],m,s):-!.
+adjetivo(["inutiles"],["useless"],m,p):-!.
+adjetivo(["inutil"],["useless"],f,s):-!.
+adjetivo(["inutiles"],["useless"],f,p):-!.
 adjetivo(["izquierdo"],["left"],m,s):-!.
 adjetivo(["izquierdos"],["left"],m,p):-!.
 adjetivo(["izquierda"],["left"],f,s):-!.
@@ -271,9 +271,9 @@ adjetivo(["inteligentes"],["smart"],f,p):-!.
 
 %Adjetivos con J
 adjetivo(["joven"],["young"],m,s):-!.
-adjetivo(["jóvenes"],["young"],m,p):-!.
+adjetivo(["jovenes"],["young"],m,p):-!.
 adjetivo(["joven"],["young"],f,s):-!.
-adjetivo(["jóvenes"],["young"],f,p):-!.
+adjetivo(["jovenes"],["young"],f,p):-!.
 
 
 %Adjetivos con L
@@ -397,10 +397,10 @@ adjetivo(["peligrosa"],["dangerous"],f,s):-!.
 adjetivo(["peligrosas"],["dangerous"],f,p):-!.
 
 %Adjetivos con R
-adjetivo(["rápido"],["fast"],m,s):-!.
-adjetivo(["rápidos"],["fast"],m,p):-!.
-adjetivo(["rápida"],["fast"],f,s):-!.
-adjetivo(["rápidas"],["fast"],f,p):-!.
+adjetivo(["rapido"],["fast"],m,s):-!.
+adjetivo(["rapidos"],["fast"],m,p):-!.
+adjetivo(["rapida"],["fast"],f,s):-!.
+adjetivo(["rapidas"],["fast"],f,p):-!.
 adjetivo(["raro"],["rare"],m,s):-!.
 adjetivo(["raros"],["rare"],m,p):-!.
 adjetivo(["rara"],["rare"],f,s):-!.
@@ -461,10 +461,10 @@ adjetivo(["sucia"],["dirty"],f,s):-!.
 adjetivo(["sucias"],["dirty"],f,p):-!.
 
 %Adjetivos con T
-adjetivo(["tímido"],["shy"],m,s):-!.
-adjetivo(["tímidos"],["shy"],m,p):-!.
-adjetivo(["tímida"],["shy"],f,s):-!.
-adjetivo(["tímidas"],["shy"],f,p):-!.
+adjetivo(["timido"],["shy"],m,s):-!.
+adjetivo(["timidos"],["shy"],m,p):-!.
+adjetivo(["timida"],["shy"],f,s):-!.
+adjetivo(["timidas"],["shy"],f,p):-!.
 adjetivo(["tonto"],["silly"],m,s):-!.
 adjetivo(["tontos"],["silly"],m,p):-!.
 adjetivo(["tonta"],["silly"],f,s):-!.
@@ -485,10 +485,10 @@ adjetivo(["hambriento"],["hungry"],f,s):-!.
 adjetivo(["hambrientos"],["hungry"],f,p):-!.
 
 %Adjetivos con U
-adjetivo(["útil"],["useful"],m,s):-!.
-adjetivo(["útiles"],["useful"],m,p):-!.
-adjetivo(["útil"],["useful"],f,s):-!.
-adjetivo(["útiles"],["useful"],f,p):-!.
+adjetivo(["util"],["useful"],m,s):-!.
+adjetivo(["utiles"],["useful"],m,p):-!.
+adjetivo(["util"],["useful"],f,s):-!.
+adjetivo(["utiles"],["useful"],f,p):-!.
 
 %Adjetivos con V
 adjetivo(["verdadero"],["true"],m,s):-!.

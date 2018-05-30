@@ -3,7 +3,7 @@
 pronombre(["yo"],["i"],p,s,mf):-!.
 pronombre(["usted"],["you"],s,s,mf):-!.
 pronombre(["ella"],["she"],t,s,f):-!.
-pronombre(["él"],["he"],t,s,f):-!.
+pronombre(["el"],["he"],t,s,f):-!.
 pronombre(["eso"],["it"],t,s,mf):-!.
 pronombre(["nosotros"],["we"],p,p,m):-!.
 pronombre(["nosotras"],["we"],p,p,f):-!.
@@ -14,7 +14,7 @@ pronombre(["ellos"],["they"],t,p,m):-!.
 %Verbos auxiliares en pregunta
 preg(["yo"],["do","i"],i,s,pr):-!.
 preg(["usted"],["do","you"],i,s,pr):-!.
-preg(["él"],["does","he"],m,s,pr):-!.
+preg(["el"],["does","he"],m,s,pr):-!.
 preg(["ella"],["does","she"],f,s,pr):-!.
 preg(["eso"],["does","it"],i,s,pr):-!.
 preg(["ustedes"],["do","you"],i,p,pr):-!.
@@ -22,7 +22,7 @@ preg(["ellos"],["do","they"],m,p,pr):-!.
 preg(["ellas"],["do","they"],f,p,pr):-!.
 
 preg(["usted"],["did","you"],i,s,pa):-!.
-preg(["él"],["did","he"],m,s,pa):-!.
+preg(["el"],["did","he"],m,s,pa):-!.
 preg(["ella"],["did","she"],f,s,pa):-!.
 preg(["eso"],["did","it"],i,s,pa):-!.
 preg(["ustedes"],["did","you"],i,p,pa):-!.
@@ -30,7 +30,7 @@ preg(["ellos"],["did","they"],m,p,pa):-!.
 preg(["ellas"],["did","they"],f,p,pa):-!.
 
 preg(["usted"],["were","you"],i,s,pa):-!.
-preg(["él"],["was","he"],m,s,pa):-!.
+preg(["el"],["was","he"],m,s,pa):-!.
 preg(["ella"],["was","she"],f,s,pa):-!.
 preg(["eso"],["was","it"],i,s,pa):-!.
 preg(["ustedes"],["were","you"],i,p,pa):-!.
@@ -38,7 +38,7 @@ preg(["ellos"],["were","they"],m,p,pa):-!.
 preg(["ellas"],["were","they"],f,p,pa):-!.
 
 preg(["usted"],["will","you"],i,s,f):-!.
-preg(["él"],["will","he"],m,s,f):-!.
+preg(["el"],["will","he"],m,s,f):-!.
 preg(["ella"],["will","she"],f,s,f):-!.
 preg(["eso"],["will","it"],i,s,f):-!.
 preg(["ustedes"],["will","you"],i,p,f):-!.
@@ -90,8 +90,8 @@ sustantivo(["animales"],["animals"],m,p).
 sustantivo(["respuesta"],["answer"],f,s).
 sustantivo(["respuestas"],["answers"],f,p).
 sustantivo(["arte"],["art"],m,s).
-sustantivo(["bebé"],["baby"],m,s).
-sustantivo(["bebés"],["babies"],m,p).
+sustantivo(["bebe"],["baby"],m,s).
+sustantivo(["bebes"],["babies"],m,p).
 sustantivo(["bola"],["ball"],f,s).
 sustantivo(["bolas"],["balls"],f,p).
 sustantivo(["banco"],["bank"],m,s).
@@ -99,8 +99,8 @@ sustantivo(["cama"],["bed"],f,s).
 sustantivo(["camas"],["beds"],f,p).
 sustantivo(["factura"],["bill"],f,s).
 sustantivo(["facturas"],["bills"],f,p).
-sustantivo(["pájaro"],["bird"],m,s).
-sustantivo(["pájaros"],["birds"],m,p).
+sustantivo(["pajaro"],["bird"],m,s).
+sustantivo(["pajaros"],["birds"],m,p).
 sustantivo(["sangre"],["blood"],f,s).
 sustantivo(["barco"],["boat"],m,s).
 sustantivo(["barcos"],["boats"],m,p).
@@ -131,7 +131,7 @@ sustantivo(["cambio"],["change"],m,s).
 sustantivo(["cambios"],["changes"],m,p).
 sustantivo(["iglesia"],["church"],f,s).
 sustantivo(["iglesias"],["churches"],f,p).
-sustantivo(["círculo"],["circle"],m,s).
+sustantivo(["circulo"],["circle"],m,s).
 sustantivo(["cuidad"],["city"],f,s).
 sustantivo(["cuidades"],["cities"],f,p).
 sustantivo(["clase"],["class"],f,s).
@@ -146,18 +146,18 @@ sustantivo(["empresa"],["company"],f,s).
 sustantivo(["empresas"],["companies"],f,p).
 sustantivo(["copia"],["copy"],f,s).
 sustantivo(["copias"],["copies"],f,p).
-sustantivo(["maíz"],["corn"],m,s).
-sustantivo(["algodón"],["cotton"],m,s).
-sustantivo(["país"],["country"],m,s).
-sustantivo(["países"],["countries"],m,p).
+sustantivo(["maiz"],["corn"],m,s).
+sustantivo(["algodon"],["cotton"],m,s).
+sustantivo(["pais"],["country"],m,s).
+sustantivo(["paises"],["countries"],m,p).
 sustantivo(["curso"],["course"],m,s).
 sustantivo(["vaca"],["cow"],f,s).
 sustantivo(["vacas"],["cows"],f,p).
 sustantivo(["multitud"],["crowd"],f,s).
-sustantivo(["día"],["day"],m,s).
-sustantivo(["días"],["days"],m,p).
+sustantivo(["dia"],["day"],m,s).
+sustantivo(["dias"],["days"],m,p).
 sustantivo(["distancia"],["distance"],f,s).
-sustantivo(["médico"],["doctor"],m,s).
+sustantivo(["medico"],["doctor"],m,s).
 sustantivo(["puerta"],["door"],f,s).
 sustantivo(["puertas"],["doors"],f,p).
 sustantivo(["oreja"],["ear"],f,s).
@@ -165,7 +165,7 @@ sustantivo(["orejas"],["ears"],f,p).
 sustantivo(["tierra"],["earth"],f,s).
 sustantivo(["huevo"],["egg"],m,s).
 sustantivo(["huevos"],["eggs"],m,p).
-sustantivo(["energía"],["energy"],f,s).
+sustantivo(["energia"],["energy"],f,s).
 sustantivo(["ejemplo"],["example"],m,s).
 sustantivo(["experiencia"],["experience"],f,s).
 sustantivo(["experiencias"],["experiences"],f,p).
@@ -173,12 +173,12 @@ sustantivo(["ojo"],["eye"],m,s).
 sustantivo(["ojos"],["eyes"],m,p).
 sustantivo(["juego"],["game"],m,s).
 sustantivo(["juegos"],["games"],m,p).
-sustantivo(["jardín"],["garden"],m,s).
+sustantivo(["jardin"],["garden"],m,s).
 sustantivo(["vidrio"],["glass"],m,s).
 sustantivo(["vidrios"],["glasses"],m,p).
 sustantivo(["oro"],["gold"],m,s).
 sustantivo(["gobierno"],["government"],m,s).
-sustantivo(["césped"],["grass"],m,s).
+sustantivo(["cesped"],["grass"],m,s).
 sustantivo(["grupo"],["group"],m,s).
 sustantivo(["grupos"],["groups"],m,p).
 sustantivo(["pelo"],["hair"],m,s).
@@ -187,7 +187,7 @@ sustantivo(["manos"],["hands"],f,p).
 sustantivo(["sombrero"],["hat"],m,s).
 sustantivo(["sombreros"],["hats"],m,p).
 sustantivo(["cabeza"],["head"],f,s).
-sustantivo(["corazón"],["heart"],m,s).
+sustantivo(["corazon"],["heart"],m,s).
 sustantivo(["historia"],["history"],f,s).
 sustantivo(["historias"],["histories"],f,p).
 sustantivo(["agujero"],["hole"],m,s).
@@ -200,10 +200,10 @@ sustantivo(["idea"],["idea"],f,s).
 sustantivo(["ideas"],["ideas"],f,p).
 sustantivo(["industria"],["industry"],f,s).
 sustantivo(["industrias"],["industries"],f,p).
-sustantivo(["información"],["information"],f,s).
+sustantivo(["informacion"],["information"],f,s).
 sustantivo(["insecto"],["insect"],m,s).
 sustantivo(["insectos"],["insects"],m,p).
-sustantivo(["interés"],["interest"],m,s).
+sustantivo(["interes"],["interest"],m,s).
 sustantivo(["hierro"],["iron"],m,s).
 sustantivo(["isla"],["island"],f,s).
 sustantivo(["islas"],["islands"],f,p).
@@ -223,9 +223,9 @@ sustantivo(["mentira"],["lie"],f,s).
 sustantivo(["mentiras"],["lies"],f,p).
 sustantivo(["vida"],["life"],f,s).
 sustantivo(["luz"],["light"],f,s).
-sustantivo(["línea"],["line"],f,s).
+sustantivo(["linea"],["line"],f,s).
 sustantivo(["lista"],["list"],f,s).
-sustantivo(["máquina"],["machine"],f,s).
+sustantivo(["maquina"],["machine"],f,s).
 sustantivo(["hombre"],["man"],m,s).
 sustantivo(["hombres"],["men"],m,p).
 sustantivo(["material"],["material"],m,s).
@@ -242,19 +242,19 @@ sustantivo(["dinero"],["money"],m,s).
 sustantivo(["mes"],["month"],m,s).
 sustantivo(["luna"],["moon"],f,s).
 sustantivo(["boca"],["mouth"],f,s).
-sustantivo(["música"],["music"],f,s).
-sustantivo(["nación"],["nation"],f,s).
+sustantivo(["musica"],["music"],f,s).
+sustantivo(["nacion"],["nation"],f,s).
 sustantivo(["noche"],["night"],f,s).
 sustantivo(["nota"],["note"],f,s).
-sustantivo(["número"],["number"],m,s).
-sustantivo(["números"],["numbers"],m,p).
+sustantivo(["numero"],["number"],m,s).
+sustantivo(["numeros"],["numbers"],m,p).
 sustantivo(["objeto"],["object"],m,s).
 sustantivo(["objetos"],["objects"],m,p).
-sustantivo(["océano"],["ocean"],m,s).
+sustantivo(["oceano"],["ocean"],m,s).
 sustantivo(["oficina"],["office"],f,s).
-sustantivo(["página"],["page"],f,s).
+sustantivo(["pagina"],["page"],f,s).
 sustantivo(["papel"],["paper"],m,s).
-sustantivo(["párrafo"],["paragraph"],m,s).
+sustantivo(["parrafo"],["paragraph"],m,s).
 sustantivo(["parque"],["park"],m,s).
 sustantivo(["parte"],["part"],f,s).
 sustantivo(["partes"],["parts"],f,p).
@@ -270,10 +270,10 @@ sustantivo(["pregunta"],["question"],f,s).
 sustantivo(["carrera"],["race"],f,s).
 sustantivo(["radio"],["radio"],m,s).
 sustantivo(["lluvia"],["rain"],f,s).
-sustantivo(["razón"],["reason"],f,s).
-sustantivo(["récord"],["record"],m,s).
+sustantivo(["razon"],["reason"],f,s).
+sustantivo(["record"],["record"],m,s).
 sustantivo(["anillo"],["ring"],m,s).
-sustantivo(["río"],["river"],m,s).
+sustantivo(["rio"],["river"],m,s).
 sustantivo(["camino"],["road"],m,s).
 sustantivo(["caminos"],["roads"],m,p).
 sustantivo(["roca"],["rock"],f,s).
@@ -289,7 +289,7 @@ sustantivo(["hermana"],["sister"],f,s).
 sustantivo(["tamaño"],["size"],m,s).
 sustantivo(["piel"],["skin"],f,s).
 sustantivo(["nieve"],["snow"],f,s).
-sustantivo(["solución"],["solution"],f,s).
+sustantivo(["solucion"],["solution"],f,s).
 sustantivo(["hijo"],["son"],m,s).
 sustantivo(["hija"],["daughter"],f,s).
 sustantivo(["primavera"],["spring"],f,s).
@@ -298,7 +298,7 @@ sustantivo(["estrellas"],["stars"],f,s).
 sustantivo(["estado"],["state"],m,s).
 sustantivo(["calle"],["street"],f,s).
 sustantivo(["estudiante"],["student"],m,s).
-sustantivo(["azúcar"],["sugar"],m,s).
+sustantivo(["azucar"],["sugar"],m,s).
 sustantivo(["sol"],["sun"],m,s).
 sustantivo(["pueblo"],["village"],m,s).
 sustantivo(["guerra"],["war"],f,s).
