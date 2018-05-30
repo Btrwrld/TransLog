@@ -43,9 +43,28 @@ predicate([Si|_],Se):- sustantivo(Se,[Si],_,_),!.
 
 
 
+tradEI(E,I):- sintagma_nominal(E,Ers,Si,Persona,Cant,_),
+tradEI(Ers,Erv,Vi,v,Persona,Cant),
+conc(Si,Vi,I0),tradEI(Erv,I1,p),
+conc(I0,I1,I).
+tradEI([],[],_).
+tradEI(E,I,p):- predicado(E,I).
+/*Busca el verbo que se adapta de mejor manera al sujeto*/
+/*tradEI(I,Ir,Rv,v,Persona,Cant):- verb(I,Ir,Rv,Cant),!.%Oracion sin auxililar*/
+tradEI(E,Er,I,v,Persona,Cant):- sintagma_verbal(E,Er,I,Persona,Cant),!.%Oracion con auxililar
 
 
 
+
+sintagma_nominal([Ae|[Se|P]],P,E,t,Cant,Sexo):- sustantivo([Se],Si,Sexo,Cant),articulo([Ae],Ai,Sexo,Cant),conc(Ai,Si,E),!.
+/*Pronombre*/
+sintagma_nominal([Se|Ir],Ir,Si,Persona,Cant,_):- pronombre([Se],Si,Persona,Cant,_),!.
+
+/*En español la conjugación del verbo decide los auxiliares en ingles*/
+sintagma_verbal([Ve|T],T,Vi,Persona,Cant):-verbo([Ve],Vi,Persona,Cant,_).
+
+predicado(E,Se):- sintagma_nominal(E,_,Se,_,_,_),!.
+predicado([Se|_],Si):- sustantivo([Se],Si,_,_),!.
 
 
 

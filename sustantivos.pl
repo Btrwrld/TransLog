@@ -11,7 +11,7 @@ pronombre(["ustedes"],["you"],s,p,mf):-!.
 pronombre(["ellas"],["they"],t,p,f):-!.
 pronombre(["ellos"],["they"],t,p,m):-!.
 
-%Verbos pregiliares
+%Verbos auxiliares en pregunta
 preg(["yo"],["do","i"],i,s,pr):-!.
 preg(["usted"],["do","you"],i,s,pr):-!.
 preg(["él"],["does","he"],m,s,pr):-!.

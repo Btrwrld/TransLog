@@ -1,6 +1,6 @@
 %Articulos definidos:
 articulo(["el"],["the"],m,s).
-articulo(["al"],["the"],f,s).
+articulo(["al"],["the"],m,s).
 articulo(["lo"],["the"],m,s).
 articulo(["la"],["the"],f,s).
 articulo(["los"],["the"],m,p).
