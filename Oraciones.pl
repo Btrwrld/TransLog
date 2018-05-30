@@ -6,6 +6,12 @@
 traduccionEI(X,R):-split_string(X," ", "", L),tradEI(L,I),atomic_list_concat(I, ' ', R).
 traduccionIE(X,R):-split_string(X," ", "", L),tradIE(L,I),atomic_list_concat(I, ' ', R).
 
+traduccionEI:-write("Introducir Texto en Español\n"),read(X),traduccionEI(X,Y),write(Y).
+
+
+traduccionIE:-write("Introducir Texto en Ingles\n"),read(X),traduccionIE(X,Y),write(Y).
+
+
 
 /* Identifica un sujeto y busca el verbo*/
 tradIE(I,E):- subject(I,Irs,Se,Persona,Cant,_),
